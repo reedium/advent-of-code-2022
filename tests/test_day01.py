@@ -32,6 +32,5 @@ def test_part1(day01_data):
     assert aoc.part1(day01_data) == 72240
 
 
-@pytest.mark.skip(reason="Not implemented")
 def test_part2(day01_data):
-    assert aoc.part2(day01_data) == ...
+    assert aoc.part2(day01_data) == 210957
