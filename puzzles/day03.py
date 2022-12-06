@@ -17,6 +17,7 @@ from typing import Dict, List, Tuple
 #   * Uppercase: 27-52
 
 # Q: Find the item type that appears in both containers. What is the sum of the priories
+# Q: Find the item type that corresponds to the badges of each three-Elf group. What is the sum of the priorities of those item types?
 
 
 class Game:
@@ -37,7 +38,7 @@ class Game:
     def puzzle2(self) -> None:
         score = 0
         for pack in range(0, len(self.inputs), 3):
-            unique_set = set(self.inputs[pack]).intersection(set(self.inputs[pack+1])).intersection(set(self.inputs[pack+2]))
+            unique_set = set(self.inputs[pack]).intersection(self.inputs[pack+1]).intersection(self.inputs[pack+2])
             score += self.score_list(unique_set)
 
         return score
