@@ -38,7 +38,6 @@ class Game:
 
 
 
-
 def parse(inputs: str):
     parsed = {"crates": [], "procedures": []}
     start_diagram, moves = inputs.split("\n\n")
@@ -60,12 +59,12 @@ def parse(inputs: str):
     return parsed
 
 
-def part1(inputs: List[List[str]]) -> str:
+def part1(inputs) -> str:
     game = Game(inputs)
     return game.part1()
 
 
-def part2(inputs: List[List[str]]) -> str:
+def part2(inputs) -> str:
     game = Game(inputs)
     return game.part2()
 
